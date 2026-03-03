@@ -1,38 +1,28 @@
-const logotext = "JOHN";
+const logotext = "ARYA";
 const meta = {
-    title: "John Doe",
-    description: "I’m John Doe data scientist _ Full stack devloper,currently working in Berlin",
+    title: "Arya Singh",
+    description: "I’m Arya Singh data scientist _ Full stack devloper,currently looking for a job opportunity",
 };
 
 const introdata = {
-    title: "I’m John Doe",
+    title: "I’m Arya Singh",
     animated: {
         first: "I love coding",
-        second: "I code cool websites",
-        third: "I develop mobile apps",
+        second: "I like to solve problems",
+        third: "I am a data scientist",
     },
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum",
-    your_img_url: "https://images.unsplash.com/photo-1514790193030-c89d266d5a9d",
+    description: "I’m Arya Singh data scientist _ Full stack devloper , currently looking for a job opportunity",
+    your_img_url: "https://media2.colourbox.com/vSwYaoldkezwEWte6y_MiCkfGT76bGZFppVNOWzaGOI/resize:fit:800:800:1/q:70/aHR0cHM6Ly9tZWRpYS5jb2xvdXJib3guY29tL1dvUXM5OVFqdGZ2T19MVkRUYzVoWW81MHNibmRuX2FfRm5TQnFNbkZYV2cvcmVzaXplOmZpdDoxNjAwOjE2MDA6MS9wbGFpbi9teXMzL2NvbG91cmJveC5wbG92cGVubmluZy5maWxlL0NPTE9VUkJPWDU0NDc2NjkyLmpwZw== ",
 };
 
 const dataabout = {
-    title: "abit about my self",
-    aboutme: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent quis dolor id ligula semper elementum feugiat pretium nulla. Nunc non commodo dolor. Nunc mollis dignissim facilisis. Morbi ut magna ultricies.",
+    title: "A bit about my self",
+    aboutme: "As a Full Stack Developer with a strong foundation in Data Science and DevOps, I bridge the gap between software engineering, data-driven decision making, and cloud-based automation . I enjoy building scalable applications, analyzing complex datasets, and ensuring smooth deployment pipelines. My toolkit includes JavaScript (React, Node.js, Express), Python (Pandas, Scikit-learn), and DevOps technologies like Docker and GitHub Actions.",
 };
 const worktimeline = [{
-        jobtitle: "Designer of week",
-        where: "YAdfi",
-        date: "2020",
-    },
-    {
-        jobtitle: "Designer of week",
-        where: "Jamalya",
-        date: "2019",
-    },
-    {
-        jobtitle: "Designer of week",
-        where: "ALquds",
-        date: "2019",
+        jobtitle: "AI Associate",
+        where: "Azienda",
+        date: "7/2023-Present",
     },
 ];
 
@@ -41,7 +31,7 @@ const skills = [{
         value: 90,
     },
     {
-        name: "Djano",
+        name: "Flask,FastAPI",
         value: 85,
     },
     {
@@ -50,25 +40,33 @@ const skills = [{
     },
     {
         name: "React",
-        value: 60,
+        value: 90,
     },
     {
-        name: "Jquery",
+        name: "Node.js",
         value: 85,
     },
+    {
+        name: "Docker",
+        value: 80,
+    },
+    {
+        name: "GitHub Actions",
+        value: 70,
+    }
 ];
 
 const services = [{
-        title: "UI & UX Design",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum sollicitudin.",
+        title: "Web Development",
+        description: "My skill set includes HTML, CSS, JavaScript, React, Node.js, and modern tools that make web experiences smooth and engaging.",
     },
     {
-        title: "Mobile Apps",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum sollicitudin.",
+        title: "Data Science",
+        description: "I specialize in analyzing data, building predictive models, and extracting insights that support smarter decision-making.My interests include machine learning, AI-driven analytics, and automating data workflows for real-world applications.",
     },
     {
-        title: "Wordpress Design",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum sollicitudin.",
+        title: "DevOps",
+        description: "I have experience with Docker and GitHub Actions, enabling me to create efficient CI/CD pipelines that ensure seamless deployment and scalability of applications.",
     },
 ];
 
@@ -136,9 +134,9 @@ const dataportfolio = [{
 ];
 
 const contactConfig = {
-    YOUR_EMAIL: "name@domain.com",
-    YOUR_FONE: "(555)123-4567",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vehicula eu nunc et sollicitudin. Cras pulvinar, nisi at imperdiet pharetra. ",
+    YOUR_EMAIL: "aryakr68313@gmail.com",
+    YOUR_FONE: "7903443553",
+    description: "Feel free to reach out to me for any project or collaboration opportunities. I'm always open to discussing new ideas and connecting with like-minded professionals. Whether you have a question, want to work together, or just want to say hi, don't hesitate to get in touch!",
     // creat an emailjs.com account 
     // check out this tutorial https://www.emailjs.com/docs/examples/reactjs/
     YOUR_SERVICE_ID: "service_id",
@@ -147,10 +145,9 @@ const contactConfig = {
 };
 
 const socialprofils = {
-    github: "https://github.com",
-    facebook: "https://facebook.com",
-    linkedin: "https://linkedin.com",
-    twitter: "https://twitter.com",
+    github: "https://github.com/in/Arya02B",
+    leetcode: "https://leetcode.com/u/aryasi27",
+    linkedin: "https://linkedin.com/in/aryadev01",
 };
 export {
     meta,

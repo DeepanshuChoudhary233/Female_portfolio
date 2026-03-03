@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import "./style.css";
 import { VscGrabber, VscClose } from "react-icons/vsc";
-import { Link } from "react-router-dom";
-import { logotext ,socialprofils } from "../content_option";
+import { logotext, socialprofils } from "../content_option";
 import Themetoggle from "../components/themetoggle";
 
 const Headermain = () => {
@@ -13,19 +12,26 @@ const Headermain = () => {
     document.body.classList.toggle("ovhidden");
   };
 
+  const handleNavClick = (id) => {
+    handleToggle();
+    setTimeout(() => {
+      const el = document.getElementById(id);
+      if (el) el.scrollIntoView({ behavior: "smooth" });
+    }, 300);  // small delay lets the menu close animation finish first
+  };
+
   return (
     <>
       <header className="fixed-top site__header">
         <div className="d-flex align-items-center justify-content-between">
-          <Link  className="navbar-brand nav_ac" to="/">
+          <a className="navbar-brand nav_ac" href="#home">
             {logotext}
-          </Link>
+          </a>
           <div className="d-flex align-items-center">
-          <Themetoggle />
-          <button className="menu__button  nav_ac" onClick={handleToggle}>
-            {!isActive ? <VscClose /> : <VscGrabber />}
-          </button>
-          
+            <Themetoggle />
+            <button className="menu__button nav_ac" onClick={handleToggle}>
+              {!isActive ? <VscClose /> : <VscGrabber />}
+            </button>
           </div>
         </div>
 
@@ -34,17 +40,17 @@ const Headermain = () => {
             <div className="menu__wrapper">
               <div className="menu__container p-3">
                 <ul className="the_menu">
-                  <li className="menu_item ">
-                  <Link  onClick={handleToggle} to="/" className="my-3">Home</Link>
+                  <li className="menu_item">
+                    <a onClick={() => handleNavClick("home")} className="my-3">Home</a>
                   </li>
                   <li className="menu_item">
-                    <Link  onClick={handleToggle} to="/portfolio" className="my-3"> Portfolio</Link>
+                    <a onClick={() => handleNavClick("portfolio")} className="my-3">Portfolio</a>
                   </li>
                   <li className="menu_item">
-                  <Link onClick={handleToggle} to="/about" className="my-3">About</Link>
+                    <a onClick={() => handleNavClick("about")} className="my-3">About</a>
                   </li>
                   <li className="menu_item">
-                  <Link onClick={handleToggle} to="/contact" className="my-3"> Contact</Link>
+                    <a onClick={() => handleNavClick("contact")} className="my-3">Contact</a>
                   </li>
                 </ul>
               </div>
@@ -52,9 +58,9 @@ const Headermain = () => {
           </div>
           <div className="menu_footer d-flex flex-column flex-md-row justify-content-between align-items-md-center position-absolute w-100 p-3">
             <div className="d-flex">
-            <a href={socialprofils.facebook}>Facebook</a>
-            <a href={socialprofils.github}>Github</a>
-            <a href={socialprofils.twitter}>Twitter</a>
+              <a href={socialprofils.facebook}>Facebook</a>
+              <a href={socialprofils.github}>Github</a>
+              <a href={socialprofils.twitter}>Twitter</a>
             </div>
             <p className="copyright m-0">copyright __ {logotext}</p>
           </div>
@@ -64,7 +70,6 @@ const Headermain = () => {
       <div className="br-bottom"></div>
       <div className="br-left"></div>
       <div className="br-right"></div>
-      
     </>
   );
 };

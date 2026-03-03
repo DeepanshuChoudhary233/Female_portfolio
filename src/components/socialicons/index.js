@@ -2,29 +2,17 @@ import React from "react";
 import "./style.css";
 import {
   FaGithub,
-  FaTwitter,
-  FaFacebookF,
   FaLinkedin,
-  FaYoutube,
-  FaTwitch,
-  FaInstagram,
-  FaSnapchatGhost,
-  FaTiktok,
   FaCircle
 } from "react-icons/fa";
 import { socialprofils } from "../../content_option";
+import { SiLeetcode } from "react-icons/si";
 
 const ICON_MAPPING = {
   default: FaCircle,
-  facebook: FaFacebookF,
   github: FaGithub,
-  instagram: FaInstagram,
+  leetcode: SiLeetcode,
   linkedin: FaLinkedin,
-  snapchat: FaSnapchatGhost,
-  tiktok: FaTiktok,
-  twitter: FaTwitter,
-  twitch: FaTwitch,
-  youtube: FaYoutube
 };
 
 export const Socialicons = (params) => {

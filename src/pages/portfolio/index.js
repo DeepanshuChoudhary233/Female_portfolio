@@ -3,6 +3,7 @@ import "./style.css";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import { Container, Row, Col } from "react-bootstrap";
 import { dataportfolio, meta } from "../../content_option";
+import { EnhancedProjectCard } from "../../components/ProjectCard/EnhancedProjectCard";
 
 export const Portfolio = () => {
   return (
@@ -20,18 +21,22 @@ export const Portfolio = () => {
           </Col>
         </Row>
         <div className="mb-5 po_items_ho">
-          {dataportfolio.map((data, i) => {
-            return (
-              <div key={i} className="po_item">
-                <img src={data.img} alt="" />
-                <div className="content">
-                  <p>{data.description}</p>
-                  <a href={data.link}>view project</a>
-                </div>
-              </div>
-            );
-          })}
-        </div>
+  {dataportfolio.map((data, i) => {
+    return (
+      <EnhancedProjectCard
+        key={i}
+        id={data.id || i}
+        title={data.projectName || data.title}
+        description={data.description || data.projectDesc}
+        image={data.img || data.image}
+        technologies={data.technologies || []}
+        liveLink={data.link || data.projectLink}
+        githubLink={data.github || data.projectGithubLink}
+        featured={data.featured || false}
+      />
+    );
+  })}
+</div>
       </Container>
     </HelmetProvider>
   );
